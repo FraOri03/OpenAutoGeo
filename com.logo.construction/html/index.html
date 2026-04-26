@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Logo Construction</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="hostDark">
+    <div class="container">
+        <header>
+            <span class="title">SMART GEOMETRY</span>
+            <span class="version">v 5.0</span>
+        </header>
+
+        <section class="controls">
+            <label>Line Size (pt)</label>
+            <input type="range" id="lineSize" min="0.1" max="2" step="0.1" value="0.5">
+            
+            <label>Grid Strictness (Filtering)</label>
+            <input type="range" id="minScore" min="1" max="5" step="1" value="2">
+
+            <div class="row">
+                <input type="checkbox" id="isDashed" checked>
+                <label for="isDashed">Dashed Lines (4pt)</label>
+            </div>
+            <hr>
+            <div class="row">
+                <input type="checkbox" id="showCircles" checked>
+                <label for="showCircles">Construction Circles</label>
+            </div>
+            <div class="row">
+                <input type="checkbox" id="showHandles">
+                <label for="showHandles">Bézier Handles</label>
+            </div>
+        </section>
+
+        <section class="actions">
+            <button id="btn-generate" class="btn-primary">GENERATE GRID</button>
+            <div id="stats-container" class="hidden">
+                <div id="stats-text"></div>
+            </div>
+            <button id="btn-clear" class="btn-secondary">Clear All Layers</button>
+        </section>
+    </div>
+
+    <script src="../js/CSInterface.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html>

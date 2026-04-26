@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExtensionManifest Version="7.0" ExtensionBundleId="com.logo.construction" ExtensionBundleVersion="1.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <ExtensionList>
+        <Extension Id="com.logo.construction.panel" Version="1.0.0" />
+    </ExtensionList>
+    <ExecutionEnvironment>
+        <HostList>
+            <Host Name="ILST" Version="[18.0,30.9]" />
+        </HostList>
+        <LocaleList><Locale Code="All" /></LocaleList>
+        <RequiredRuntimeList>
+            <RequiredRuntime Name="CSXS" Version="12.0" />
+        </RequiredRuntimeList>
+    </ExecutionEnvironment>
+    <DispatchInfoList>
+        <Extension Id="com.logo.construction.panel">
+            <DispatchInfo>
+                <Resources>
+                    <MainPath>./html/index.html</MainPath>
+                    <ScriptPath>./jsx/host.jsx</ScriptPath>
+                </Resources>
+                <Lifecycle><AutoVisible>true</AutoVisible></Lifecycle>
+                <UI>
+                    <Type>Panel</Type>
+                    <Menu>Logo Construction Agent</Menu>
+                    <Geometry><Size><Width>280</Width><Height>550</Height></Size></Geometry>
+                </UI>
+            </DispatchInfo>
+        </Extension>
+    </DispatchInfoList>
+</ExtensionManifest>
